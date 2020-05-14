@@ -6,13 +6,14 @@ Formula:
 %C/%N * 1.166181001
 */
 
+////Maunal entry version.
 //#include <iostream>
 //#include <cmath>
 //
-//Percentge of carbon.
-float percentc;
-//Percentage of nitrogen.
-float percentn;
+////Percentage of carbon.
+//float percentc;
+////Percentage of nitrogen.
+//float percentn;
 //
 //void calculate()
 //{
@@ -44,6 +45,8 @@ float percentn;
 //	return 0;
 //}
 
+
+//Automated version.
 #include <iostream>
 #include <fstream>
 #include <string>
