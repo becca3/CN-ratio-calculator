@@ -1,37 +1,39 @@
 /* 
 A calculator used to calculate the
 ratio of C (carbon) to N (nitrogen)
+
+Formula:
+%C/%N * 1.166181001
 */
 
 #include <iostream>
 #include <cmath>
 
-int c;
-int n;
-int AM;
+//Percentge of carbon.
+float percentc;
+//Percentage of nitrogen.
+float percentn;
 
 void calculate()
 {
-	int percentc;
-	int percentn;
-	int AMN = 14;
-	int AMC = 12;
-
-	percentc = c / AMC;
-	percentn = n / AMN;
-
+	//Total of %C / %N.
 	float total;
-	total = percentc / percentn;
+	//Total * 1.166181001.
+	float final;
 
-	std::cout << total << "\n";
+	total = (percentc / percentn);
+
+	final = total * 1.166181001;
+
+	std::cout << final << ":1" << "\n";
 }
 
 int main(int argc, char** argv)
 {
 	std::cout << "Enter percentage of carbon (C): ";
-	std::cin >> c;
+	std::cin >> percentc;
 	std::cout << "Enter percentage of nitrogen (N): ";
-	std::cin >> n;
+	std::cin >> percentn;
 
 	calculate();
 	std::cout << "Complete!";
