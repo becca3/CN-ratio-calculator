@@ -1,12 +1,15 @@
 /* 
+Purpose:
 A calculator used to calculate the
 ratio of C (carbon) to N (nitrogen)
 
 Formula:
 %C/%N * 1.166181001
+
 */
 
 ////Maunal entry version.
+
 //#include <iostream>
 //#include <cmath>
 //
@@ -47,6 +50,7 @@ Formula:
 
 
 //Automated version.
+
 #include <iostream>
 #include <fstream>
 #include <string>
