@@ -6,6 +6,8 @@ ratio of C (carbon) to N (nitrogen)
 Formula:
 %C/%N * 1.166181001
 
+Uncomment the version you wish to use and comment out the other version. 
+
 */
 
 ////Maunal entry version.
@@ -76,6 +78,7 @@ void calculate()
 int main(int argc, char** argv)
 {
 	std::ifstream file;
+	//Change the name in quotations to match the name of your file.
 	file.open("percent.txt");
 	
 	while (file >> x >> y)
